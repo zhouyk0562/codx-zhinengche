@@ -1,0 +1,27 @@
+# Keil 编译产物
+**/Objects/
+**/Listings/
+*.o
+*.d
+*.axf
+*.map
+*.crf
+*.dep
+*.lnp
+*.htm
+*.hex
+*.bin
+*.log
+BianYiRiZhi.log
+
+# Keil 用户界面状态
+*.uvguix.*
+
+# 压缩包和临时文件
+*.zip
+*.rar
+*.7z
+tmp/
+
+# 旧工程归档不进入发布仓库
+_OldProjects_*/
