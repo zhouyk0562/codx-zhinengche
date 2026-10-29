@@ -6,6 +6,7 @@
 
 | 工程 | 用途 |
 |---|---|
+| `Projects/ZiTai_SuDu_Kong_Zhi_WiFi_CeShi` | IMU 坡度感知、动态目标轮速、速度 PI、堵转保护和 WiFi 上传 |
 | `Projects/IMU963RA_WiFi_ZiTai_CeShi` | IMU963RA 九轴采集、互补滤波、Roll/Pitch/Yaw 姿态解算和 WiFi 上传 |
 | `Projects/DianJi_PI_SuDu_Huan_WiFi_CeShi` | 最终速度环工程：电机接口 2、编码器接口 1、PI 速度控制、堵转保护、WiFi 上传 |
 | `Projects/DianJi_JieKou1_WiFi_CeShi` | 电机低占空比、编码器和 WiFi 联调测试 |
