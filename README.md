@@ -1,11 +1,12 @@
 # codx智能车
 
-基于 `MSPM0G3519` 学习板的智能车培训代码。当前仓库包含编码器、电机驱动、速度 PI、堵转保护、TFT 显示和 WiFi/VOFA+ FireWater 数据上传等测试工程。
+基于 `MSPM0G3519` 学习板的智能车培训代码。当前仓库包含编码器、电机驱动、速度 PI、堵转保护、TFT 显示、IMU963RA 姿态解算和 WiFi/VOFA+ FireWater 数据上传等测试工程。
 
 ## 工程说明
 
 | 工程 | 用途 |
 |---|---|
+| `Projects/IMU963RA_WiFi_ZiTai_CeShi` | IMU963RA 九轴采集、互补滤波、Roll/Pitch/Yaw 姿态解算和 WiFi 上传 |
 | `Projects/DianJi_PI_SuDu_Huan_WiFi_CeShi` | 最终速度环工程：电机接口 2、编码器接口 1、PI 速度控制、堵转保护、WiFi 上传 |
 | `Projects/DianJi_JieKou1_WiFi_CeShi` | 电机低占空比、编码器和 WiFi 联调测试 |
 | `Projects/BianMaQi_JieKou1_WiFi_CeShi` | 编码器接口 1 和 WiFi 测试 |
@@ -47,6 +48,27 @@ RST  = A8
 VCC  = 5V
 GND  = GND
 ```
+
+### IMU963RA 姿态传感器
+
+IMU963RA 直接连接学习板姿态传感器接口 `P14`：
+
+```text
+3V3  = 3V3
+GND  = GND
+SCK  = B23
+MOSI = B22
+MISO = B21
+CS   = B19
+```
+
+姿态工程使用 20 ms 定时中断采集九轴数据，通过低通滤波和互补滤波输出 `Roll/Pitch/Yaw`。VOFA+ FireWater 数据格式为：
+
+```text
+JiuZhou:AX,AY,AZ,GX,GY,GZ,MX,MY,MZ,Roll,Pitch,Yaw
+```
+
+其中 Ch9、Ch10、Ch11 分别是 `Roll`、`Pitch`、`Yaw`。
 
 ## 编译与下载
 
