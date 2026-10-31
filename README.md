@@ -6,14 +6,19 @@
 
 | 工程 | 用途 |
 |---|---|
-| `Projects/ZiTai_SuDu_Kong_Zhi_WiFi_CeShi` | IMU 坡度感知、动态目标轮速、速度 PI、堵转保护和 WiFi 上传 |
+| `Projects/XinDianJi_DaiMa/ZiTai_SuDu_Huan_XinDianJi_WiFi_CeShi` | 新电机最终工程：IMU 坡度感知、动态目标轮速、速度 PI、堵转保护和 WiFi 上传 |
+| `Projects/XinDianJi_DaiMa/DianJi_SuDu_Huan_XinDianJi_CeShi` | 新电机速度闭环和 WiFi 调参工程 |
+| `Projects/XinDianJi_DaiMa/DianJi_KaiHuan_ZhengFanZhuan_CeShi` | 新电机开环正反转与编码器方向测试 |
+| `Projects/JiuDianJi_DaiMa/ZiTai_SuDu_Kong_Zhi_WiFi_CeShi` | 旧电机姿态坡度调速工程 |
+| `Projects/JiuDianJi_DaiMa/DianJi_PI_SuDu_Huan_WiFi_CeShi` | 旧电机速度 PI、堵转保护和 WiFi 工程 |
 | `Projects/IMU963RA_WiFi_ZiTai_CeShi` | IMU963RA 九轴采集、互补滤波、Roll/Pitch/Yaw 姿态解算和 WiFi 上传 |
-| `Projects/DianJi_PI_SuDu_Huan_WiFi_CeShi` | 最终速度环工程：电机接口 2、编码器接口 1、PI 速度控制、堵转保护、WiFi 上传 |
-| `Projects/DianJi_JieKou1_WiFi_CeShi` | 电机低占空比、编码器和 WiFi 联调测试 |
-| `Projects/BianMaQi_JieKou1_WiFi_CeShi` | 编码器接口 1 和 WiFi 测试 |
-| `Projects/BianMaQi_JieKou1_PingMu_CeShi` | 编码器接口 1 和 1.8 寸 TFT 显示测试 |
+| `Projects/JiuDianJi_DaiMa/DianJi_JieKou1_WiFi_CeShi` | 旧阶段电机、编码器和 WiFi 联调 |
+| `Projects/JiuDianJi_DaiMa/BianMaQi_JieKou1_WiFi_CeShi` | 旧阶段编码器和 WiFi 测试 |
+| `Projects/JiuDianJi_DaiMa/BianMaQi_JieKou1_PingMu_CeShi` | 旧阶段编码器和 TFT 显示测试 |
 
 调参过程记录位于 `Backups/DianJi_PI_TiaoCanJiLu_20261026.txt`。
+
+完整目录说明见 `Projects/README.md`。
 
 ## 当前硬件连接
 
